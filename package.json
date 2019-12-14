@@ -1,0 +1,19 @@
+{
+  "name": "next-cookie-auth1",
+  "version": "1.0.0",
+  "description": "Cookie authentication using Next.js",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "author": "Aiya",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "next": "^9.1.5",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}
