@@ -50,6 +50,11 @@ app.prepare().then(() => {
     res.json(userData);
   });
 
+  server.post("/api/logout", (req, res) => {
+    res.clearCookie("token", COOKIE_OPTIONS);
+    res.sendStatus(204);
+  });
+
   server.get("/api/profile", async (req, res) => {
     // If no cookie was sent with the request, default to an empty object
     const { signedCookies = {} } = req;
